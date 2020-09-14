@@ -28,7 +28,7 @@ public class MovableRectangle implements  Movable {
                 "\ny2_speed: " + bottomRight.ySpeed;
     }
 
-    public boolean checkSpeed()
+    public boolean Speed()
     {
         if((topLeft.xSpeed == bottomRight.xSpeed) && (topLeft.ySpeed == bottomRight.ySpeed))
             return true;
@@ -39,7 +39,7 @@ public class MovableRectangle implements  Movable {
     @Override
     public void moveUp()
     {
-        if(checkSpeed())
+        if(Speed())
         {
             topLeft.moveUp();
             bottomRight.moveUp();
@@ -51,7 +51,7 @@ public class MovableRectangle implements  Movable {
     @Override
     public void moveDown()
     {
-        if(checkSpeed())
+        if(Speed())
         {
             topLeft.moveDown();
             bottomRight.moveDown();
@@ -63,7 +63,7 @@ public class MovableRectangle implements  Movable {
     @Override
     public void moveLeft()
     {
-        if(checkSpeed())
+        if(Speed())
         {
             topLeft.moveLeft();
             bottomRight.moveLeft();
@@ -75,7 +75,7 @@ public class MovableRectangle implements  Movable {
     @Override
     public void moveRight()
     {
-        if(checkSpeed())
+        if(Speed())
         {
             topLeft.moveRight();
             bottomRight.moveRight();
